@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Basic User Form</title>
+</head>
+<body style="background-color:#d0e7f9; font-family:Arial; text-align:center; padding-top:40px;">
+
+  <form style="background-color:white; padding:20px; border:2px solid #aaa; border-radius:8px; width:350px; margin:auto;">
+    <h2 style="margin-bottom:15px;">User Form</h2>
+
+    <label>Name:</label><br>
+    <input type="text" name="name" placeholder="Enter name" style="width:90%; margin-bottom:10px;"><br>
+
+    <label>Sex:</label><br>
+    <input type="radio" name="sex" value="male"> Male
+    <input type="radio" name="sex" value="female" style="margin-left:10px;"> Female<br><br>
+
+    <label>Age:</label><br>
+    <input type="text" name="age" pattern="\d*" maxlength="3" placeholder="Enter your age" style="width:90%; margin-bottom:10px;"><br>
+
+    <label>Date of Birth:</label><br>
+    <input type="text" name="dob" placeholder="DD-MM-YYYY" style="width:90%; margin-bottom:10px; background-color:#f5f5f5;"><br>
+
+    <label>Email:</label><br>
+    <input type="email" name="email" placeholder="Enter email" style="width:90%; margin-bottom:10px;"><br>
+
+    <input 
+      type="submit" 
+      value="Submit"
+      style="margin-top:10px; width:95%; padding:8px; background-color:#cccccc; color:black; border:none; font-weight:bold; cursor:pointer;"
+      onmouseover="this.style.backgroundColor='#999999';"
+      onmouseout="this.style.backgroundColor='#cccccc';"
+    >
+  </form>
+
+</body>
+</html>
